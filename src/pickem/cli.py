@@ -60,6 +60,11 @@ def cmd_build_vrs(repo: Path):
 
 
 def load_data(cfg):
+    if not (PROC / "vrs_standings.csv").exists():
+        raise SystemExit(
+            "No VRS data found in data/processed/.\n"
+            "Download Valve's ranking data first (once, about 150 MB):\n\n"
+            "    python -m pickem fetch-vrs\n")
     s = pd.read_csv(PROC / "vrs_standings.csv", parse_dates=["date"])
     m = pd.read_csv(PROC / "vrs_matches.csv", parse_dates=["date"])
     # Valve sometimes changes a team's capitalisation (BetBoom -> BETBOOM).
