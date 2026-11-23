@@ -38,7 +38,7 @@ swiss:
   wins_to_advance: 3
   losses_to_eliminate: 3
   bo3_for_decider: true       # Bo3 when a match can advance or eliminate a team
-  n_sims: 50000
+  n_sims: 100000
 
 pickem:
   n_3_0: 2

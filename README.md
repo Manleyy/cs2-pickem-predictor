@@ -7,7 +7,7 @@ least 5 right. Configured for **PGL Major Singapore 2026, Stage 1** (24-27 Nov).
 ```
 Valve VRS repo ──┐                                       ┌─► match model (logistic regression)
 manual results ──┼─► features (VRS, live Elo, head-to-   ┤
-(HLTV optional) ─┘    head, region strength)             └─► 50k Swiss simulations ─► Pick'Em optimiser
+(HLTV optional) ─┘    head, region strength)             └─► 100k Swiss simulations ─► Pick'Em optimiser
 ```
 
 **Backtested on 11 past Major Swiss stages:** 4.45 correct picks per stage on
@@ -173,7 +173,7 @@ stages with 5+ correct 5 → 6).
 
 ## The simulation
 
-`swiss.py` plays the stage 50,000 times with Valve's Major rules: round 1 as
+`swiss.py` plays the stage 100,000 times with Valve's Major rules: round 1 as
 published (1v9, 2v10 …), then pairings inside each W-L group by Buchholz
 difficulty and seed, top versus bottom, no rematches. Groups of six in rounds
 4-5 use Valve's 15-pattern priority table (taken, with credit, from
@@ -181,7 +181,7 @@ difficulty and seed, top versus bottom, no rematches. Groups of six in rounds
 MIT licence, where it reproduces all 99 real Cologne 2026 pairings). Matches that can advance
 or eliminate a team are Bo3, the rest Bo1.
 
-The optimiser then scores candidate pick sets against all 50,000 simulated
+The optimiser then scores candidate pick sets against all 100,000 simulated
 stages and hill-climbs on P(≥ 5 correct). That can differ from just taking the
 highest single probabilities, because picks are correlated (a 3-0 pick that
 goes 3-1 also costs an advance slot).
