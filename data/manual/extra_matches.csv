@@ -1,0 +1,34 @@
+# Matches played after the latest VRS snapshot that you want counted in "form".
+# One row per series. Names can be HLTV/announced names; aliases in config.yaml apply.
+# fmt: bo1 / bo3 / bo5 (informational)
+# 2-23 Nov 2026 results for Stage 1 teams, read from HLTV team pages on 23 Nov.
+# M80, DENDELE, Imperial, Wildcard, BC.Game/GOSH, FlyQuest, Chinggis Warriors, Lynn Vision: no matches in this window.
+date,winner,loser,fmt
+2026-11-02,BETBOOM,9z,bo3
+2026-11-02,FURIA,FaZe,bo3
+2026-11-02,HEROIC,B8,bo3
+2026-11-02,Liquid,Aurora,bo3
+2026-11-02,PARIVISION,G2,bo3
+2026-11-03,Falcons,FaZe,bo3
+2026-11-03,PARIVISION,Liquid,bo3
+2026-11-03,TYLOO,9z,bo3
+2026-11-03,The MongolZ,HEROIC,bo3
+2026-11-04,BETBOOM,Liquid,bo3
+2026-11-04,Falcons,HEROIC,bo3
+2026-11-04,Liquid,TYLOO,bo3
+2026-11-04,MOUZ,PARIVISION,bo3
+2026-11-06,Natus Vincere,PARIVISION,bo3
+2026-11-15,100 Thieves,Eternal Fire,bo3
+2026-11-15,100 Thieves,PARIVISION,bo3
+2026-11-15,Eternal Fire,33,bo3
+2026-11-15,HEROIC,FaZe,bo3
+2026-11-15,PARIVISION,33,bo3
+2026-11-15,fnatic,FaZe,bo3
+2026-11-15,magic,HEROIC,bo3
+2026-11-16,HEROIC,PARIVISION,bo3
+2026-11-16,magic,Eternal Fire,bo3
+2026-11-17,100 Thieves,fnatic,bo3
+2026-11-17,Ninjas in Pyjamas,UNiTY,bo3
+2026-11-17,magic,HEROIC,bo3
+2026-11-18,Luminosity,Ninjas in Pyjamas,bo3
+2026-11-19,BIG,Ninjas in Pyjamas,bo3

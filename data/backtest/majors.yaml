@@ -1,0 +1,94 @@
+# Past CS2 Major Swiss stages for backtesting. Source: English Wikipedia
+# articles for each Major (round 1 pairings and final W-L), read 23 Nov 2026.
+# round1: [left, right] as listed; treated as seed i vs seed i+8.
+# records: final wins-losses.
+# all_bo3: stage played every match as Bo3 (Cologne 2026 Stage 3).
+
+- name: Shanghai 2024 Opening Stage
+  date: "2024-11-30"
+  round1: [[FURIA, GamerLegion], [Virtus.pro, MIBR], [Liquid, Cloud9], [Complexity, FlyQuest],
+           [BIG, Passion UA], [fnatic, Wildcard], [The MongolZ, Rare Atom], [paiN, Imperial]]
+  records: {The MongolZ: 3-0, Liquid: 3-0, GamerLegion: 3-1, FURIA: 3-1, paiN: 3-1, Wildcard: 3-2,
+            BIG: 3-2, MIBR: 3-2, FlyQuest: 2-3, Passion UA: 2-3, Complexity: 2-3, Virtus.pro: 1-3,
+            Cloud9: 1-3, Rare Atom: 1-3, Imperial: 0-3, fnatic: 0-3}
+
+- name: Shanghai 2024 Elimination Stage
+  date: "2024-12-05"
+  round1: [[G2, The MongolZ], [Natus Vincere, Liquid], [Vitality, GamerLegion], [Spirit, FURIA],
+           [MOUZ, paiN], [FaZe, Wildcard], [HEROIC, BIG], [3DMAX, MIBR]]
+  records: {The MongolZ: 3-0, Vitality: 3-0, G2: 3-1, Spirit: 3-1, Liquid: 3-1, HEROIC: 3-2,
+            FaZe: 3-2, MOUZ: 3-2, FURIA: 2-3, MIBR: 2-3, Natus Vincere: 2-3, GamerLegion: 1-3,
+            3DMAX: 1-3, paiN: 1-3, Wildcard: 0-3, BIG: 0-3}
+
+- name: Austin 2025 Stage 1
+  date: "2025-06-03"
+  round1: [[Complexity, OG], [HEROIC, Chinggis Warriors], [B8, Imperial], [BetBoom, Nemiga],
+           [TYLOO, NRG], [Lynn Vision, Legacy], [Wildcard, Metizport], [FlyQuest, Fluxo]]
+  records: {B8: 3-0, HEROIC: 3-0, BetBoom: 3-1, OG: 3-1, Nemiga: 3-1, Lynn Vision: 3-2, Legacy: 3-2,
+            TYLOO: 3-2, FlyQuest: 2-3, NRG: 2-3, Wildcard: 2-3, Imperial: 1-3,
+            Chinggis Warriors: 1-3, Complexity: 1-3, Metizport: 0-3, Fluxo: 0-3}
+
+- name: Austin 2025 Stage 2
+  date: "2025-06-07"
+  round1: [[Falcons, B8], [FaZe, HEROIC], [3DMAX, BetBoom], [Virtus.pro, OG], [paiN, Nemiga],
+           [FURIA, Lynn Vision], [MIBR, Legacy], [M80, TYLOO]]
+  records: {Legacy: 3-0, Virtus.pro: 3-0, paiN: 3-1, 3DMAX: 3-1, FURIA: 3-1, FaZe: 3-2, Nemiga: 3-2,
+            Lynn Vision: 3-2, B8: 2-3, MIBR: 2-3, HEROIC: 2-3, TYLOO: 1-3, M80: 1-3, Falcons: 1-3,
+            BetBoom: 0-3, OG: 0-3}
+
+- name: Austin 2025 Stage 3
+  date: "2025-06-12"
+  round1: [[Vitality, Legacy], [MOUZ, Virtus.pro], [Spirit, paiN], [G2, 3DMAX], [The MongolZ, FURIA],
+           [Aurora, FaZe], [Natus Vincere, Nemiga], [Liquid, Lynn Vision]]
+  records: {Spirit: 3-0, FURIA: 3-0, FaZe: 3-1, Natus Vincere: 3-1, Vitality: 3-1, The MongolZ: 3-2,
+            paiN: 3-2, MOUZ: 3-2, Virtus.pro: 2-3, Legacy: 2-3, G2: 2-3, Aurora: 1-3, 3DMAX: 1-3,
+            Lynn Vision: 1-3, Nemiga: 0-3, Liquid: 0-3}
+
+- name: Budapest 2025 Stage 1
+  date: "2025-11-24"
+  round1: [[B8, M80], [Imperial, Rare Atom], [Legacy, FlyQuest], [PARIVISION, The Huns],
+           [Ninjas in Pyjamas, NRG], [GamerLegion, Fluxo], [FaZe, Lynn Vision], [fnatic, RED Canids]]
+  records: {M80: 3-0, FlyQuest: 3-0, B8: 3-1, fnatic: 3-1, Ninjas in Pyjamas: 3-1, PARIVISION: 3-2,
+            Imperial: 3-2, FaZe: 3-2, NRG: 2-3, Fluxo: 2-3, Legacy: 2-3, The Huns: 1-3,
+            RED Canids: 1-3, GamerLegion: 1-3, Lynn Vision: 0-3, Rare Atom: 0-3}
+
+- name: Budapest 2025 Stage 2
+  date: "2025-11-29"
+  round1: [[Astralis, Ninjas in Pyjamas], [3DMAX, fnatic], [Passion UA, FaZe], [PARIVISION, TYLOO],
+           [Natus Vincere, FlyQuest], [Aurora, M80], [MIBR, Imperial], [Liquid, B8]]
+  records: {Natus Vincere: 3-0, FaZe: 3-0, B8: 3-1, Imperial: 3-1, PARIVISION: 3-1, Liquid: 3-2,
+            Passion UA: 3-2, 3DMAX: 3-2, Ninjas in Pyjamas: 2-3, M80: 2-3, Astralis: 2-3,
+            fnatic: 1-3, Aurora: 1-3, TYLOO: 1-3, MIBR: 0-3, FlyQuest: 0-3}
+
+- name: Budapest 2025 Stage 3
+  date: "2025-12-04"
+  round1: [[MOUZ, PARIVISION], [Imperial, The MongolZ], [Spirit, Liquid], [Passion UA, G2],
+           [Vitality, FaZe], [paiN, 3DMAX], [FURIA, Natus Vincere], [B8, Falcons]]
+  records: {Spirit: 3-0, FURIA: 3-0, MOUZ: 3-1, Vitality: 3-1, The MongolZ: 3-1, FaZe: 3-2,
+            Natus Vincere: 3-2, Falcons: 3-2, B8: 2-3, G2: 2-3, Passion UA: 2-3, Imperial: 1-3,
+            3DMAX: 1-3, paiN: 1-3, Liquid: 0-3, PARIVISION: 0-3}
+
+- name: Cologne 2026 Stage 1
+  date: "2026-06-02"
+  round1: [[M80, Lynn Vision], [SINNERS, FlyQuest], [B8, TYLOO], [MIBR, THUNDER dOWNUNDER],
+           [GamerLegion, NRG], [HEROIC, Sharks], [BetBoom, Gaimin Gladiators], [BIG, Liquid]]
+  records: {B8: 3-0, BetBoom: 3-0, GamerLegion: 3-1, M80: 3-1, MIBR: 3-1, TYLOO: 3-2, BIG: 3-2,
+            FlyQuest: 3-2, Liquid: 2-3, NRG: 2-3, Lynn Vision: 2-3, THUNDER dOWNUNDER: 1-3,
+            Sharks: 1-3, HEROIC: 1-3, Gaimin Gladiators: 0-3, SINNERS: 0-3}
+
+- name: Cologne 2026 Stage 2
+  date: "2026-06-06"
+  round1: [[Astralis, GamerLegion], [9z, FlyQuest], [FUT, B8], [paiN, TYLOO], [G2, M80],
+           [Monte, BIG], [Spirit, BetBoom], [Legacy, MIBR]]
+  records: {FUT: 3-0, Spirit: 3-0, G2: 3-1, BetBoom: 3-1, 9z: 3-1, Monte: 3-2, B8: 3-2, Legacy: 3-2,
+            TYLOO: 2-3, BIG: 2-3, paiN: 2-3, M80: 1-3, MIBR: 1-3, Astralis: 1-3, FlyQuest: 0-3,
+            GamerLegion: 0-3}
+
+- name: Cologne 2026 Stage 3
+  date: "2026-06-11"
+  all_bo3: true
+  round1: [[PARIVISION, 9z], [The MongolZ, BetBoom], [Vitality, FUT], [MOUZ, Legacy], [Falcons, G2],
+           [FURIA, B8], [Natus Vincere, Spirit], [Aurora, Monte]]
+  records: {Spirit: 3-0, FURIA: 3-0, Aurora: 3-1, Vitality: 3-1, Falcons: 3-1, BetBoom: 3-2, 9z: 3-2,
+            G2: 3-2, Natus Vincere: 2-3, FUT: 2-3, The MongolZ: 2-3, MOUZ: 1-3, Monte: 1-3,
+            Legacy: 1-3, B8: 0-3, PARIVISION: 0-3}

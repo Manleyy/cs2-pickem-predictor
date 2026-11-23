@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "Pick'Em: train + predict", "type": "debugpy", "request": "launch", "module": "pickem", "args": ["all"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+    { "name": "Pick'Em: predict only", "type": "debugpy", "request": "launch", "module": "pickem", "args": ["predict"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+    { "name": "Pick'Em: train only", "type": "debugpy", "request": "launch", "module": "pickem", "args": ["train"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+    { "name": "Data: update VRS from Valve", "type": "debugpy", "request": "launch", "module": "pickem", "args": ["fetch-vrs"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+    { "name": "Data: fetch HLTV rankings + Nov results", "type": "debugpy", "request": "launch", "module": "pickem", "args": ["hltv-fetch", "--results-from", "2026-11-02"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" },
+    { "name": "Data: parse saved HLTV pages", "type": "debugpy", "request": "launch", "module": "pickem", "args": ["hltv-parse"], "cwd": "${workspaceFolder}", "console": "integratedTerminal" }
+  ]
+}

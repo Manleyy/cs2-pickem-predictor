@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "setup: create venv + install",
+      "type": "shell",
+      "command": "py -3 -m venv .venv; .venv\\Scripts\\python -m pip install -U pip; .venv\\Scripts\\python -m pip install -e \".[hltv,dev]\"",
+      "problemMatcher": []
+    },
+    {
+      "label": "pickem: all (train + predict)",
+      "type": "shell",
+      "command": ".venv\\Scripts\\python -m pickem all",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "pickem: predict only",
+      "type": "shell",
+      "command": ".venv\\Scripts\\python -m pickem predict",
+      "problemMatcher": []
+    },
+    {
+      "label": "pickem: train only",
+      "type": "shell",
+      "command": ".venv\\Scripts\\python -m pickem train",
+      "problemMatcher": []
+    },
+    {
+      "label": "pickem: backtest past Majors",
+      "type": "shell",
+      "command": ".venv\\Scripts\\python -m pickem backtest",
+      "problemMatcher": []
+    },
+    {
+      "label": "data: update VRS from Valve",
+      "type": "shell",
+      "command": ".venv\\Scripts\\python -m pickem fetch-vrs",
+      "problemMatcher": []
+    },
+    {
+      "label": "data: fetch HLTV rankings + November results",
+      "type": "shell",
+      "command": ".venv\\Scripts\\python -m pickem hltv-fetch --results-from 2026-11-02",
+      "problemMatcher": []
+    },
+    {
+      "label": "data: parse saved HLTV pages",
+      "type": "shell",
+      "command": ".venv\\Scripts\\python -m pickem hltv-parse",
+      "problemMatcher": []
+    },
+    {
+      "label": "pickem: tests",
+      "type": "shell",
+      "command": ".venv\\Scripts\\python -m pytest -q",
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}

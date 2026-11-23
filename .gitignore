@@ -1,0 +1,11 @@
+# Python / tooling
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.env
+
+# Downloaded data (fetch with `python -m pickem fetch-vrs` / `hltv-fetch`)
+data/raw/
+data/processed/
