@@ -43,7 +43,7 @@ prebuilt numpy/scikit-learn files.
 Change the number of simulations for one run with `--sims`:
 
 ```powershell
-python -m pickem predict --sims 1000000
+python -m pickem predict --sims 100000
 ```
 
 Results go to `output/`:
