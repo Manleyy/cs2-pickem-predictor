@@ -8,6 +8,7 @@
   predict       simulate the Swiss stage and choose Pick'Em picks
   all           train + predict
   backtest      replay past Majors: how many Pick'Em picks would have been right
+  board         redraw output/board.png from output/predictions.json
 """
 from __future__ import annotations
 
@@ -221,8 +222,8 @@ def cmd_predict(cfg, n_sims=None):
     # ---- outputs
     OUT.mkdir(exist_ok=True)
     prof_df = pd.DataFrame(prof).assign(seed=range(1, n + 1), name=shown)[
-        ["seed", "name", "team", "vrs_points_raw", "vrs_rank", "hltv_rank", "vrs_points",
-         "form", "sos", "n_recent"]]
+        ["seed", "name", "team", "region", "vrs_points_raw", "vrs_rank", "hltv_rank", "vrs_points",
+         "elo", "form", "sos", "n_recent"]]
     prof_df.to_csv(OUT / "team_profiles.csv", index=False)
     rec.to_csv(OUT / "record_probabilities.csv", index=False)
     pd.DataFrame(p_bo1, index=shown, columns=shown).round(3).to_csv(OUT / "matrix_bo1.csv")
@@ -234,7 +235,7 @@ def cmd_predict(cfg, n_sims=None):
                   p_coin=round(p_coin, 4), expected_correct=round(exp_c, 3),
                   correct_distribution=[round(float(x), 4) for x in dist],
                   round1=r1_rows, records=rec.round(4).to_dict("records"),
-                  profiles=prof_df.round(4).to_dict("records"))
+                  profiles=prof_df.round(4).astype(object).where(prof_df.notna(), None).to_dict("records"))
     (OUT / "predictions.json").write_text(json.dumps(result, indent=2, default=float), encoding="utf-8")
 
     md = [f"# {t['name']} - Pick'Em", "",
@@ -250,6 +251,12 @@ def cmd_predict(cfg, n_sims=None):
            "## Record probabilities", "", (rec.set_index("team") * 100).round(1).to_markdown(), "",
            "## Team inputs", "", prof_df.round(3).to_markdown(index=False)]
     (OUT / "picks.md").write_text("\n".join(md), encoding="utf-8")
+    try:
+        from .board import draw_board
+        draw_board(OUT / "predictions.json", OUT / "board.png")
+        print("Wrote output/board.png")
+    except ImportError:
+        print("(install pillow to also draw output/board.png)")
 
     pd.set_option("display.width", 160)
     print(prof_df.round(3).to_string(index=False))
@@ -305,7 +312,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(prog="pickem", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("command", choices=["fetch-vrs", "build-vrs", "hltv-fetch", "hltv-parse",
-                                        "train", "predict", "all", "backtest"])
+                                        "train", "predict", "all", "backtest", "board"])
     ap.add_argument("--config", default=None)
     ap.add_argument("--sims", type=int, default=None, help="override number of simulations")
     ap.add_argument("--rankings-from", default="2024-09-02", help="hltv-fetch: first ranking date")
@@ -337,6 +344,10 @@ def main(argv=None):
         cmd_train(cfg)
     elif a.command == "predict":
         cmd_predict(cfg, a.sims)
+    elif a.command == "board":
+        from .board import draw_board
+        draw_board(OUT / "predictions.json", OUT / "board.png")
+        print("Wrote output/board.png")
     elif a.command == "backtest":
         cmd_backtest(cfg, a.sims)
     elif a.command == "all":

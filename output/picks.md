@@ -53,21 +53,21 @@ P(at least 5 correct) = **39.8%**, expected correct = 4.14 / 10
 
 ## Team inputs
 
-|   seed | name               | team              |   vrs_points_raw |   vrs_rank |   hltv_rank |   vrs_points |   form |      sos |   n_recent |
-|-------:|:-------------------|:------------------|-----------------:|-----------:|------------:|-------------:|-------:|---------:|-----------:|
-|      1 | Ninjas in Pyjamas  | Ninjas in Pyjamas |             1564 |         15 |         nan |         1564 |  0.011 | 1260.25  |         37 |
-|      2 | PVISION            | PARIVISION        |             1560 |         16 |         nan |         1560 | -0.107 | 1532.67  |         22 |
-|      3 | HEROIC             | HEROIC            |             1548 |         18 |         nan |         1548 |  0.04  | 1298.07  |         36 |
-|      4 | FaZe Clan          | FaZe              |             1539 |         20 |         nan |         1539 | -0.118 | 1367.69  |         21 |
-|      5 | Team Liquid        | Liquid            |             1528 |         21 |         nan |         1528 | -0.086 | 1458.97  |         30 |
-|      6 | Eternal Fire       | Eternal Fire      |             1513 |         22 |         nan |         1513 |  0.08  | 1192.91  |         49 |
-|      7 | 100 Thieves        | 100 Thieves       |             1511 |         23 |         nan |         1511 |  0.124 | 1196.09  |         30 |
-|      8 | 9z Team            | 9z                |             1490 |         24 |         nan |         1490 | -0.31  | 1610.77  |         18 |
-|      9 | M80                | M80               |             1489 |         25 |         nan |         1489 | -0.073 | 1336.93  |         26 |
-|     10 | DENDELE CS         | DENDELE           |             1466 |         29 |         nan |         1466 | -0.064 | 1244.13  |         25 |
-|     11 | Imperial Esports   | Imperial          |             1406 |         35 |         nan |         1406 |  0.087 | 1066.78  |         38 |
-|     12 | Wildcard           | Wildcard          |             1391 |         38 |         nan |         1391 |  0.032 |  997.75  |         22 |
-|     13 | GOSH               | BC.Game           |             1337 |         45 |         nan |         1337 | -0.028 | 1182.94  |         21 |
-|     14 | FlyQuest           | FlyQuest          |             1318 |         48 |         nan |         1318 |  0.072 |  744.629 |         31 |
-|     15 | Chinggis Warriors  | Chinggis Warriors |             1272 |         55 |         nan |         1272 |  0.05  |  796.179 |         33 |
-|     16 | Lynn Vision Gaming | Lynn Vision       |             1267 |         56 |         nan |         1267 |  0.057 |  864.288 |         18 |
+|   seed | name               | team              | region   |   vrs_points_raw |   vrs_rank |   hltv_rank |   vrs_points |      elo |   form |      sos |   n_recent |
+|-------:|:-------------------|:------------------|:---------|-----------------:|-----------:|------------:|-------------:|---------:|-------:|---------:|-----------:|
+|      1 | Ninjas in Pyjamas  | Ninjas in Pyjamas | Europe   |             1564 |         15 |         nan |         1564 | 1314.12  |  0.011 | 1260.25  |         37 |
+|      2 | PVISION            | PARIVISION        | Europe   |             1560 |         16 |         nan |         1560 | 1391.9   | -0.107 | 1532.67  |         22 |
+|      3 | HEROIC             | HEROIC            | Europe   |             1548 |         18 |         nan |         1548 | 1311.64  |  0.04  | 1298.07  |         36 |
+|      4 | FaZe Clan          | FaZe              | Europe   |             1539 |         20 |         nan |         1539 | 1288.46  | -0.118 | 1367.69  |         21 |
+|      5 | Team Liquid        | Liquid            | Americas |             1528 |         21 |         nan |         1528 | 1326.14  | -0.086 | 1458.97  |         30 |
+|      6 | Eternal Fire       | Eternal Fire      | Europe   |             1513 |         22 |         nan |         1513 | 1256.55  |  0.08  | 1192.91  |         49 |
+|      7 | 100 Thieves        | 100 Thieves       | Europe   |             1511 |         23 |         nan |         1511 | 1351.4   |  0.124 | 1196.09  |         30 |
+|      8 | 9z Team            | 9z                | Americas |             1490 |         24 |         nan |         1490 | 1369.67  | -0.31  | 1610.77  |         18 |
+|      9 | M80                | M80               | Americas |             1489 |         25 |         nan |         1489 | 1266.11  | -0.073 | 1336.93  |         26 |
+|     10 | DENDELE CS         | DENDELE           | Americas |             1466 |         29 |         nan |         1466 | 1172.6   | -0.064 | 1244.13  |         25 |
+|     11 | Imperial Esports   | Imperial          | Americas |             1406 |         35 |         nan |         1406 | 1167.12  |  0.087 | 1066.78  |         38 |
+|     12 | Wildcard           | Wildcard          | Americas |             1391 |         38 |         nan |         1391 | 1127.23  |  0.032 |  997.75  |         22 |
+|     13 | GOSH               | BC.Game           | Asia     |             1337 |         45 |         nan |         1337 | 1004.22  | -0.028 | 1182.94  |         21 |
+|     14 | FlyQuest           | FlyQuest          | Asia     |             1318 |         48 |         nan |         1318 | 1162.55  |  0.072 |  744.629 |         31 |
+|     15 | Chinggis Warriors  | Chinggis Warriors | Asia     |             1272 |         55 |         nan |         1272 |  948.559 |  0.05  |  796.179 |         33 |
+|     16 | Lynn Vision Gaming | Lynn Vision       | Asia     |             1267 |         56 |         nan |         1267 | 1219.9   |  0.057 |  864.288 |         18 |

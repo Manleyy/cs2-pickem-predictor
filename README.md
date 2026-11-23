@@ -14,6 +14,21 @@ manual results ──┼─► features (VRS, live Elo, head-to-   ┤
 average and 5+ correct in 7 of 11 stages, against 4.27 and 5/11 for picking
 straight down the VRS ranking. Details under [The model](#the-model).
 
+## Results: PGL Major Singapore 2026, Stage 1
+
+![Pick'Em forecast for PGL Major Singapore 2026 Stage 1](output/board.png)
+
+| Slot | Picks |
+|---|---|
+| 3-0 | PVISION, 100 Thieves |
+| Advance (3-1 or 3-2) | Ninjas in Pyjamas, FaZe Clan, HEROIC, 9z Team, Eternal Fire, Team Liquid |
+| 0-3 | Chinggis Warriors, GOSH |
+
+40% chance of 5 or more correct picks (expected 4.1 of 10), from 100,000
+simulated stages with data up to 19 Nov 2026. Full odds for every team are in
+[output/picks.md](output/picks.md). The image is redrawn by every
+`python -m pickem predict` (or alone with `python -m pickem board`).
+
 ## Quick start (Windows, VS Code)
 
 1. Open this folder in VS Code (`File > Open Folder`).
@@ -50,6 +65,7 @@ Results go to `output/`:
 
 | file | what |
 |---|---|
+| `board.png` | the forecast as an image (picks, round 1, chance to advance) |
 | `picks.md` | the 10 picks, round 1 odds, record probabilities, team inputs |
 | `predictions.json` | everything above, machine readable (e.g. for a website) |
 | `record_probabilities.csv` | P(3-0 … 0-3) and P(advance) per team |
