@@ -171,22 +171,6 @@ therefore multiplied by 1.6 (`bo1_stretch`). This finding comes from
 score (record log score −1.665 → −1.656, advance Brier 0.207 → 0.203,
 stages with 5+ correct 5 → 6).
 
-### Comparison with Leclowndu93150/pickem-prediction-model
-
-Same test as their README: every series from 1 May to 19 Nov 2026, model fit
-only on earlier data. Top 50/100 by HLTV rank at match time. The test sets are
-close but not identical (803 vs their 829 top-50 series; our data after
-1 Nov only covers the Singapore Stage 1 teams).
-
-| | their model | **this model** | VRS points (fit on earlier), theirs / ours |
-|---|---|---|---|
-| top-50 log loss | 0.660 (0.665 strictly held out) | **0.653** | 0.668 / 0.664 |
-| top-100 log loss | **0.642** (0.641 held out) | 0.647 | 0.652 / 0.658 |
-
-This model is ahead on top-50 teams (the Major level); theirs is ahead on
-top-100, most likely thanks to player ratings and per-map stats from HLTV's
-mobile API, which this project doesn't use.
-
 ## The simulation
 
 `swiss.py` plays the stage 50,000 times with Valve's Major rules: round 1 as
