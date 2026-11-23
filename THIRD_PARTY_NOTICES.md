@@ -32,6 +32,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
+## Barlow Condensed font
+
+`src/pickem/fonts/BarlowCondensed-*.ttf` (used for `output/board.png`) are
+Copyright 2017 The Barlow Project Authors (https://github.com/jpt/barlow),
+licensed under the SIL Open Font License 1.1; the full license is in
+`src/pickem/fonts/OFL.txt`.
+
 ## Data
 
 - Valve's Counter-Strike Regional Standings

@@ -65,7 +65,7 @@ Results go to `output/`:
 
 | file | what |
 |---|---|
-| `board.png` | the forecast as an image (picks, round 1, chance to advance) |
+| `board.png` | the forecast as an image (the ticket and every team's chance to advance) |
 | `picks.md` | the 10 picks, round 1 odds, record probabilities, team inputs |
 | `predictions.json` | everything above, machine readable (e.g. for a website) |
 | `record_probabilities.csv` | P(3-0 … 0-3) and P(advance) per team |
