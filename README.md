@@ -55,10 +55,11 @@ On Windows with Smart App Control, run pip and the tool through Python
 can be blocked. Python 3.13 is recommended; very new Python versions may lack
 prebuilt numpy/scikit-learn files.
 
-Change the number of simulations for one run with `--sims`:
+Change the number of simulations for one run with `--sims` (default 100,000;
+more simulations make the percentages slightly more precise but take longer):
 
 ```powershell
-python -m pickem predict --sims 100000
+python -m pickem predict --sims 500000
 ```
 
 Results go to `output/`:
