@@ -24,8 +24,8 @@ simulated stages with data up to 19 Nov 2026.
 ### Full breakdown
 
 Every team ranked by its chance of going 3-0, advancing 3-1/3-2, going 0-3 and
-advancing at all, plus the next most likely teams behind each pick. Click the
-image to open it at full size.
+advancing at all, plus how many of the 10 picks come true across the simulated
+stages. Click the image to open it at full size.
 
 ![Full breakdown for all 16 teams](output/breakdown.png)
 
@@ -71,7 +71,7 @@ Results go to `output/`:
 | file | what |
 |---|---|
 | `board.png` | the forecast as an image (the picks and every team's chance to advance) |
-| `breakdown.png` | all 16 teams ranked per slot, plus the model picks and next most likely teams |
+| `breakdown.png` | all 16 teams ranked per slot, plus how many of the 10 picks come true |
 | `picks.md` | the 10 picks, round 1 odds, record probabilities, team inputs |
 | `predictions.json` | everything above, machine readable (e.g. for a website) |
 | `record_probabilities.csv` | P(3-0 … 0-3) and P(advance) per team |
