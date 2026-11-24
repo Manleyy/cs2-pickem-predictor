@@ -18,16 +18,20 @@ straight down the VRS ranking. Details under [The model](#the-model).
 
 ![Pick'Em forecast for PGL Major Singapore 2026 Stage 1](output/board.png)
 
-| Slot | Picks |
-|---|---|
-| 3-0 | PVISION, 100 Thieves |
-| Advance (3-1 or 3-2) | Ninjas in Pyjamas, FaZe Clan, HEROIC, 9z Team, Eternal Fire, Team Liquid |
-| 0-3 | Chinggis Warriors, GOSH |
-
 40% chance of 5 or more correct picks (expected 4.1 of 10), from 100,000
-simulated stages with data up to 19 Nov 2026. Full odds for every team are in
-[output/picks.md](output/picks.md). The image is redrawn by every
-`python -m pickem predict` (or alone with `python -m pickem board`).
+simulated stages with data up to 19 Nov 2026.
+
+### Full breakdown
+
+Every team ranked by its chance of going 3-0, advancing 3-1/3-2, going 0-3 and
+advancing at all, plus the next most likely teams behind each pick. Click the
+image to open it at full size.
+
+![Full breakdown for all 16 teams](output/breakdown.png)
+
+Full odds for every team are also in [output/picks.md](output/picks.md). Both
+images are redrawn by every `python -m pickem predict` (or alone with
+`python -m pickem board`).
 
 ## Quick start (Windows, VS Code)
 
@@ -66,7 +70,8 @@ Results go to `output/`:
 
 | file | what |
 |---|---|
-| `board.png` | the forecast as an image (all 16 teams ranked per slot, plus the model picks) |
+| `board.png` | the forecast as an image (the picks and every team's chance to advance) |
+| `breakdown.png` | all 16 teams ranked per slot, plus the model picks and next most likely teams |
 | `picks.md` | the 10 picks, round 1 odds, record probabilities, team inputs |
 | `predictions.json` | everything above, machine readable (e.g. for a website) |
 | `record_probabilities.csv` | P(3-0 … 0-3) and P(advance) per team |

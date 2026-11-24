@@ -8,7 +8,7 @@
   predict       simulate the Swiss stage and choose Pick'Em picks
   all           train + predict
   backtest      replay past Majors: how many Pick'Em picks would have been right
-  board         redraw output/board.png from output/predictions.json
+  board         redraw output/board.png and breakdown.png from predictions.json
 """
 from __future__ import annotations
 
@@ -258,10 +258,12 @@ def cmd_predict(cfg, n_sims=None):
     (OUT / "picks.md").write_text("\n".join(md), encoding="utf-8")
     try:
         from .board import draw_board
+        from .breakdown import draw_breakdown
         draw_board(OUT / "predictions.json", OUT / "board.png")
-        print("Wrote output/board.png")
+        draw_breakdown(OUT / "predictions.json", OUT / "breakdown.png")
+        print("Wrote output/board.png and output/breakdown.png")
     except ImportError:
-        print("(install pillow to also draw output/board.png)")
+        print("(install pillow to also draw output/board.png and breakdown.png)")
 
     pd.set_option("display.width", 160)
     print(prof_df.round(3).to_string(index=False))
@@ -351,8 +353,10 @@ def main(argv=None):
         cmd_predict(cfg, a.sims)
     elif a.command == "board":
         from .board import draw_board
+        from .breakdown import draw_breakdown
         draw_board(OUT / "predictions.json", OUT / "board.png")
-        print("Wrote output/board.png")
+        draw_breakdown(OUT / "predictions.json", OUT / "breakdown.png")
+        print("Wrote output/board.png and output/breakdown.png")
     elif a.command == "backtest":
         cmd_backtest(cfg, a.sims)
     elif a.command == "all":
